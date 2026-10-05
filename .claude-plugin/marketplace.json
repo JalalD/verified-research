@@ -1,0 +1,15 @@
+{
+  "name": "verified-research",
+  "description": "Verified Research: sourced, fact-checked research for Claude.",
+  "owner": {
+    "name": "JalalD",
+    "url": "https://github.com/JalalD"
+  },
+  "plugins": [
+    {
+      "name": "verified-research",
+      "source": "./",
+      "description": "Rigorous multi-source research that ends in a sourced, fact-checked answer with calibrated confidence."
+    }
+  ]
+}

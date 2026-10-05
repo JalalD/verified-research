@@ -1,0 +1,14 @@
+{
+  "name": "verified-research",
+  "displayName": "Verified Research",
+  "version": "1.0.0",
+  "description": "Rigorous multi-source research that ends in a sourced, fact-checked answer with calibrated confidence: parallel researchers, a red team, and an independent claim-by-claim verifier.",
+  "author": {
+    "name": "JalalD",
+    "url": "https://github.com/JalalD"
+  },
+  "homepage": "https://github.com/JalalD/verified-research",
+  "repository": "https://github.com/JalalD/verified-research",
+  "license": "MIT",
+  "keywords": ["research", "fact-checking", "citations", "verification", "deep-research", "literature-review", "comparison"]
+}
