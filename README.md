@@ -97,6 +97,14 @@ Built and tuned with Anthropic's skill-creator workflow:
 
 The cost: on research questions it takes roughly 1.7–2.1× the time and 1.6–1.8× the tokens of a plain answer, and a parallel run uses several times more. That's the price of the checking. Quick questions stay quick.
 
+## Privacy and network use
+
+- The plugin has no server and no MCP connectors. Nothing is sent to the author or to any service run by the author, and nothing is retained outside your own machine.
+- Searches and page reads go through your Claude client's built-in web search and fetch tools.
+- `scripts/check_links.py` (optional) sends plain HTTP requests from your machine to the URLs cited in a report, to check that they load and contain the quoted text.
+- A Standard or Deep run writes its working notes and report as local files under `research/` in your working folder. Delete them whenever you like.
+- If you ask about your own work, it may read your connected apps (Drive, email and similar) through connectors you have already set up, and it never puts private details into web searches.
+
 ## Limits
 
 - It can only cite what it can open. Paywalled papers and sites that block automated access limit what it can verify, and it says so.
