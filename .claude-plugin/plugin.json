@@ -10,5 +10,16 @@
   "homepage": "https://github.com/JalalD/verified-research",
   "repository": "https://github.com/JalalD/verified-research",
   "license": "MIT",
-  "keywords": ["research", "fact-checking", "citations", "verification", "deep-research", "literature-review", "comparison"]
+  "keywords": [
+    "research",
+    "fact-checking",
+    "citations",
+    "verification",
+    "deep-research",
+    "literature-review",
+    "comparison"
+  ],
+  "documentationUrl": "https://github.com/JalalD/verified-research#readme",
+  "supportUrl": "https://github.com/JalalD/verified-research/issues",
+  "privacyPolicyUrl": "https://github.com/JalalD/verified-research/blob/main/PRIVACY.md"
 }
