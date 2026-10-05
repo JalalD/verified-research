@@ -1,0 +1,97 @@
+{
+  "skill_name": "verified-research",
+  "evals": [
+    {
+      "id": 1,
+      "name": "quick-node-lts",
+      "prompt": "quick one - what's the current Node.js LTS version and when does it hit end of life? deciding what to pin in our Dockerfiles",
+      "expected_output": "Quick tier: a short cited answer from the official Node.js release schedule with an 'as of' date, mentioning any imminent LTS transition; no long report.",
+      "files": [],
+      "expectations": [
+        "Identifies Node.js 24 as the current LTS line",
+        "Gives Node 24's end-of-life date as 30 April 2028",
+        "Flags the imminent change: Node 26 becomes LTS on 28 Oct 2026",
+        "Cites an official Node.js source (nodejs.org or the nodejs/Release repo)",
+        "Recommends a specific Docker image tag to pin",
+        "Warns about practical breakage when moving to Node 26 images (Yarn v1 / Corepack no longer bundled)",
+        "Gives an explicit 'as of' date",
+        "Stays brief for a 'quick one' request (250 words or fewer)",
+        "States confidence explicitly"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "factcheck-debugging-stat",
+      "prompt": "A senior dev on my team keeps saying \"developers spend 50% of their time debugging\" to justify buying a $40k/year observability tool. Is that stat legit? Where does it actually come from?",
+      "expected_output": "Origin trace to the original source of the ~50% figure, its sponsorship and method, how it mutated, better evidence, a clear verdict with confidence, and what it means for the purchase decision.",
+      "files": [],
+      "expectations": [
+        "Traces the figure to the 2013 Cambridge Judge Business School study commissioned by Undo",
+        "Points out the original said 'programming time', not total working time",
+        "Flags the debugging-tool vendor's sponsorship as a conflict of interest",
+        "Cites independent measurements (e.g. Microsoft's ~14% of the workday, Beller et al.)",
+        "Reports the Stripe Developer Coefficient accurately (maintenance = 13.5 of 41.1 h/week; 17.3 h answers the technical-debt question)",
+        "Gives a clear verdict",
+        "States a confidence level",
+        "Ties back to the $40k decision with a concrete way to evaluate it",
+        "Factual claims carry an inline citation next to them (manual review of audit_report.py flags; arithmetic, recommendations and gaps excluded)"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "compare-supabase-firebase",
+      "prompt": "We're a 4-person team in Amman building a multi-tenant B2B SaaS, maybe 20k MAU in year one. Supabase vs Firebase for the backend: compare cost at our scale, data residency options near Jordan / the Gulf, auth, and lock-in. Which should we pick?",
+      "expected_output": "Sourced comparison table with dated pricing from official pages, actual regions available near Jordan/Gulf, auth and lock-in trade-offs, and a recommendation for the stated scenario.",
+      "files": [],
+      "expectations": [
+        "Includes a comparison table covering the requested facets",
+        "Estimates cost at ~20k MAU from official list prices, with stated assumptions",
+        "States that Supabase's managed cloud has no Middle East region",
+        "Notes Firebase Auth processes data only in the US, so Gulf hosting is partial",
+        "Considers Jordan's PDPL rules on transferring data abroad",
+        "Recommends one option for the stated scenario and says what would flip it",
+        "Pricing and region facts carry inline citations next to the claims",
+        "States an explicit confidence level",
+        "Lists what couldn't be verified"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "evidence-ai-coding-productivity",
+      "prompt": "What does the actual evidence say about whether AI coding assistants make developers more productive? I want the strongest studies, where they disagree and why, and what it means for a 5-person team deciding whether to pay for Cursor or Claude Code seats.",
+      "expected_output": "Evidence review covering rigorous studies on both sides (including the METR 2025 RCT), why they disagree, overall certainty, and practical guidance for a 5-person team.",
+      "files": [],
+      "expectations": [
+        "Includes the METR 2025 RCT finding that experienced developers were ~19% slower",
+        "Includes a rigorous speedup study (Cui et al. ~26% more tasks, Peng et al. 55.8%, or Google ~21%)",
+        "Explains why studies disagree (task and experience, outcome measured, tool generation, time horizon)",
+        "Reports designs and sample sizes of key studies",
+        "Rates the overall certainty of the evidence explicitly",
+        "Discusses code-quality, maintainability or review-load risks",
+        "Gives concrete guidance for the 5-person team (time-boxed pilot with metrics)",
+        "Notes that no independent head-to-head Cursor vs Claude Code study exists",
+        "Factual claims carry an inline citation next to them (manual review of audit flags)"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "jordan-pdpl-arabic",
+      "prompt": "ما هي التزامات شركة برمجيات أردنية صغيرة بموجب قانون حماية البيانات الشخصية؟ نخزّن بيانات العملاء (الأسماء وأرقام الهواتف والبريد الإلكتروني) على سيرفرات خارج الأردن.",
+      "expected_output": "An Arabic answer identifying Jordan's Personal Data Protection Law No. 24 of 2023, its effective date, obligations relevant to a small software company, cross-border transfer rules, status of implementing regulations, official sources, and a not-legal-advice note.",
+      "files": [],
+      "expectations": [
+        "Answers in Arabic",
+        "Identifies Law No. 24 of 2023 as the governing law",
+        "Gives the in-force date (17 March 2024) and the end of the grace period (17 March 2025)",
+        "Explains the cross-border transfer conditions (Articles 14-15) for servers outside Jordan",
+        "Covers breach-notification deadlines",
+        "States the penalties (JOD 1,000-10,000; up to JOD 500/day capped at 3% of revenue)",
+        "Cites official Jordanian government sources (MoDEE)",
+        "Recommends consulting a Jordanian lawyer / says it isn't legal advice",
+        "Notes the status of implementing regulations and instructions",
+        "States confidence explicitly",
+        "Factual claims carry an inline citation next to them (manual review of audit flags)"
+      ]
+    }
+  ]
+}
