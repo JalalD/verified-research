@@ -105,6 +105,8 @@ The cost: on research questions it takes roughly 1.7–2.1× the time and 1.6–
 - A Standard or Deep run writes its working notes and report as local files under `research/` in your working folder. Delete them whenever you like.
 - If you ask about your own work, it may read your connected apps (Drive, email and similar) through connectors you have already set up, and it never puts private details into web searches.
 
+Full policy: [PRIVACY.md](PRIVACY.md).
+
 ## Limits
 
 - It can only cite what it can open. Paywalled papers and sites that block automated access limit what it can verify, and it says so.
